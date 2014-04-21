@@ -10,13 +10,11 @@ TEST_EXECUTABLES = $(TEST_SOURCES:.c=)
 
 test: $(TEST_EXECUTABLES)
 
-$(TEST_EXECUTABLES): CFLAGS += -Wunused-parameter
 $(TEST_EXECUTABLES): CFLAGS += -Ideps/describe -Ideps
 $(TEST_EXECUTABLES): $(OBJS)
 	@$(CC) $@.c $^ -o $@ $(CFLAGS) $(LDFLAGS)
 	@$@
 
-example: CFLAGS += -Wint-to-void-pointer-cast
 example: example.o $(OBJS)
 	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
 
