@@ -49,7 +49,7 @@ batch_wait(batch_t *self);
 /**
  * Stop all batch threads.  Will block the main thread
  * until all worker threads have completed.  Frees all
- * memory associated with the back on success.
+ * memory associated with the batch on success.
  *
  * Returns BATCH_SUCCESS (0) on success.
  */
