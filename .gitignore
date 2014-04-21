@@ -1,0 +1,7 @@
+deps/
+example
+test/end
+test/new
+test/push
+test/wait
+*.o

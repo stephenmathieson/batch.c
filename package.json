@@ -1,0 +1,12 @@
+{
+  "name": "batch",
+  "version": "0.0.0",
+  "repo": "stephenmathieson/batch.c",
+  "description": "A tiny async batch thingy using POSIX threads",
+  "keywords": ["pthread", "async", "concurrency"],
+  "license": "MIT",
+  "src": ["src/batch.h", "src/batch.c"],
+  "development": {
+    "stephenmathieson/describe.h": "*"
+  }
+}
